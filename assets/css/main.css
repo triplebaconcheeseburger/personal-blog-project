@@ -1,0 +1,142 @@
+/* Reset and base styles */
+body, p, ul, li, button {
+    margin: 0;
+    padding: px;
+    border: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-size: 4vw; /* Scales size based on the width of the viewport */
+    color: #333;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 2vw;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 5.5vw; /* Increases size slightly as the viewport narrows */
+    }
+    h3 {
+        font-size: 4vw;
+    }
+}
+
+.logo-link {
+    display: inline-block; /* Ensures the link fits the size of the image */
+    width: 20%; /* Adjust this percentage based on your design needs */
+    max-width: 200px; /* Maximum size the logo can reach */
+    min-width: 100px; /* Minimum size of the logo */
+}
+
+.logo-link img {
+    width: 100%; /* Makes the image scale within the link container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any extra space around the image */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .logo-link {
+        width: 30%; /* Allows the logo to be slightly larger on smaller screens */
+    }
+}
+
+
+header, nav, main, article, section, footer {
+    display: block;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main content */
+
+main {
+    width: 100%; /* Ensures that main element fills the entire width of the viewport */
+    max-width: 100%; /* Prevents any overflow beyond the viewport width */
+    padding: 0; /* Removes any padding that might cause issues with full width */
+    margin: 0 auto; /* Centers the main content if needed, adjust as per design */
+}
+
+article {
+    width: 100%; /* Each article takes full width of the main container */
+    margin: 0; /* Remove default margin */
+    padding: 10px 20px; /* Remove default padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+article img {
+    width: 100%; /* Makes image fill the width of the article */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+}
+
+.full-width-image img {
+    width: 100vw; /* Ensures the image is as wide as the viewport */
+    position: relative; /* Adjust position if needed */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #E52534;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+}
