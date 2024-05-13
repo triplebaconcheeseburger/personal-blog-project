@@ -1,87 +1,3 @@
-/* Reset and base styles */
-body, p, ul, li, button {
-    margin: 0;
-    padding: px;
-    border: none;
-    list-style: none;
-    font-family: Arial, sans-serif;
-}
-h1 {
-    font-size: 4vw; /* Scales size based on the width of the viewport */
-    color: #333;
-    margin: 20px 0;
-}
-
-h3 {
-    font-size: 2vw;
-    color: #333;
-    margin: 5px 0;
-}
-
-/* Adjust font size on smaller screens */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 5.5vw; /* Increases size slightly as the viewport narrows */
-    }
-    h3 {
-        font-size: 4vw;
-    }
-    p {
-        line-height: 4vw;
-    }
-}
-
-.logo-link {
-    display: inline-block; /* Ensures the link fits the size of the image */
-    width: 20%; /* Adjust this percentage based on your design needs */
-    max-width: 200px; /* Maximum size the logo can reach */
-    min-width: 100px; /* Minimum size of the logo */
-}
-
-.logo-link img {
-    width: 100%; /* Makes the image scale within the link container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes any extra space around the image */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .logo-link {
-        width: 30%; /* Allows the logo to be slightly larger on smaller screens */
-    }
-    p {
-        line-height: 4vw;
-    }
-}
-
-header, nav, main, article, section, footer {
-    display: block;
-}
-
-/* Header and Navigation */
-header {
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-nav ul li {
-    padding: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
 /* Article Body */
 .full-width-image img {
     width: 100vw; /* Ensures the image is as wide as the viewport */
@@ -90,6 +6,7 @@ nav a {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    display: grid;
 }
 
 .blog-content {
@@ -130,42 +47,4 @@ article {
     display: inline-block;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
 
-nav ul li {
-    padding: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #222;
-    color: white;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        padding: 5px;
-    }
-
-    .author-info img {
-        float: none;
-        display: block;
-        margin: auto;
-    }
-}

@@ -1,0 +1,23 @@
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    .author-info img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
